@@ -13,8 +13,8 @@ var Hotel = db.define('hotel', {
         allowNull: false
     },
 	amenitites: {
-        type: Sequelize.STRING,
-        allowNull: false
+        type: Sequelize.STRING
+        //allowNull: false
     }
 });
 

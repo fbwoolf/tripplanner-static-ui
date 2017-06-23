@@ -1,4 +1,45 @@
 {% extends "layout.html" %}
 {% block content %}
 <h1>Welcome to Trip Planner!</h1>
+
+<div class = "trip-options">
+	<h3>Hotels</h3>
+	<div>
+	    <select name="status">
+	        {% for hotel in hotels %}
+	        <option>
+	        	<a href="{{ hotel.name }}">{{ hotel.name }}</a>
+	        </option>
+			{% endfor %}
+	    </select>
+	</div>
+</div>
+
+<div class = "trip-options">
+	<h3>Restaurants</h3>
+	<div>
+	    <select name="status">
+	        {% for restaurant in restaurants %}
+	        <option>
+	        	<a href="{{ restaurant.name }}">{{ restaurant.name }}</a>
+	        </option>
+			{% endfor %}
+	    </select>
+	</div>
+</div>
+
+<div class = "trip-options">
+	<h3>Activities</h3>
+	<div>
+		<select name="status">
+		        {% for activity in activities %}
+		        <option>
+		        	<a href="{{ activity.name }}">{{ activity.name }}</a>
+		        </option>
+				{% endfor %}
+		</select>
+	</div>
+</div>
 {% endblock %}
+
+
